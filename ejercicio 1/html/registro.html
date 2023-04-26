@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+      <!--css-->
+      <link rel="stylesheet" href="../css/styles.css">
+      <!--metadatos-->
+      <meta name="description" content="pagina dedica a la valoracion de la pelicula the social Network">
+      <meta name="author" content="Santiago Matias Albornoz">
+</head>
+<body>
+      <!--saltos de navegacion-->
+      <section class="saltos">
+        <ul>
+            <li><a href="#main">Salto a contenido</a></li>
+            <li><a href="#nav">Saltar a navegacion</a></li>
+        </ul>
+    </section>
+    <!--header con logo-->
+    <header>
+            <figure>
+               <a href="/ejercicio 1/index.html"> <img src="/ejercicio 1/img/logotp03.png" title="logo de la pagina" alt="logo de la pagina"></a>
+            </figure>
+            <h1>The Social Network</h1>
+            <h2>Registro</h2>
+              <!--barra de navegacion-->
+    <nav>
+        <ul id="nav">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="/ejercicio 1/html/reparto.html">Reparto</a></li>
+            <li><a href="/ejercicio 1/html/datos.html">Datos</a></li>
+            <li><a href="/ejercicio 1/html/registro.html">Registro</a></li>
+            <li><a href="/ejercicio 1/html/encuesta.html">Encuesta</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <!--main-->
+    <main class="conteiner-reg" id="main">
+            <form action="../php/procesar.php" method="get" class="form1">
+                <label for="usu">usuario:</label>
+                  <input title="usuario" type="text" id="usu" name="usuario">
+                <label for="email">Email:</label>
+                  <input title="email" type="text" id="ema" name="Email" required>
+                <label for="clave">Clave:</label> 
+                  <input title="password" type="password" id="clave" name="pass" required>
+                <label for="birth date">Fecha de nacimiento:</label>
+                  <input title="birth date" type="date" id="fecNac" name="FechaNac">
+                <label for="zona">Elija su país:</label>
+                  <select name="zona" id="miZona">
+                    <option title="seleccione" value="ninguna">--Seleccione--</option>
+                    <option title="Argentina" value="Argentina">Argentina</option>
+                    <option title="Francia" value="Francia">Francia 2°</option>
+                    <option title="Holanda" value="Holanda">Holanda</option>
+                  </select>  
+                <fieldset class="contenedor-opc">
+                    <legend>¿Desea recibir novedades?</legend>
+                    <label for="si">Si, deseo recibir Novdades</label>
+                      <input title="si" type="radio" id="yes" name="yes" value="yes">
+                    <label for="si">No, mcuhas gracias!</label>
+                      <input title="no" type="radio" id="no" name="no" value="no">
+                </fieldset>
+                <input class="suscribe" title="suscribirse" type="submit" name="Suscribirse" id="Suscribirse" value="Suscribirse">
+            </form>
+
+            <aside>
+                <h3>¿Algún inconveniente? Contactanos!</h3>
+                <form action="../php/procesar.php" method="get">
+                    <label for="email">Email:</label>
+                      <input title="correoelectronico" type="text" id="email" name="Email" required>
+                    <label for="asunto">Asunto:</label>
+                      <input title="asunto" type="text" id="asunto" name="asunto"> 
+                    <label for="text"></label>
+                      <textarea name="consulta" id="consulta" cols="30" rows="10" required></textarea>
+                      <input class="contactar" title="contactar" type="submit" name="Suscribirse" id="Enviar" value="Contactanos!">   
+                </form>
+            </aside>
+    </main>
+    <!--footer-->
+    <footer>
+        <figure>
+            <a href="mailto:albornozsantiago358@gmail.com">
+                <svg title="logo redireccionando a un email de contacto" alt="imagen de logo email" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#19376d" viewBox="0 0 256 256"><path d="M224,44H32A12,12,0,0,0,20,56V192a20,20,0,0,0,20,20H216a20,20,0,0,0,20-20V56A12,12,0,0,0,224,44ZM193.15,68,128,127.72,62.85,68ZM44,188V83.28l75.89,69.57a12,12,0,0,0,16.22,0L212,83.28V188Z"></path></svg>
+            </a>
+        </figure>
+            
+        <legend>
+            <p>&copy Santiago Albornoz</p>
+        </legend>
+    </footer>
+  
+</body>
+</html>
